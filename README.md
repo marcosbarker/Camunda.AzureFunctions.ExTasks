@@ -32,14 +32,19 @@
 
 
 
-  ## <img height="45px" align="center" src="https://github.com/OsZeressemos/zeroCommerce/blob/main/public/assets/readme/stockrocketgif.gif">    Tecnologia Utilizada
+  ## <img height="45px" align="center" src="https://github.com/OsZeressemos/zeroCommerce/blob/main/public/assets/readme/stockrocketgif.gif">    Tecnologias Utilizadas
 
-- [**Azure Functions**](https://azure.microsoft.com/pt-br/products/functions)    [(*Documentação*)](https://azure.microsoft.com/pt-br/products/functions#content-card-list-oc803c)
-- [**.NET**](https://dotnet.microsoft.com/pt-br/)    [(*Documentação*)](https://learn.microsoft.com/pt-br/dotnet/?WT.mc_id=dotnet-35129-website)
-- [**C#**](https://dotnet.microsoft.com/en-us/learn/csharp)    [(*Documentação*)](https://learn.microsoft.com/pt-br/dotnet/csharp/?WT.mc_id=dotnet-35129-website)
-- [**Camunda**](https://camunda.com/)    [(*Documentação*)](https://docs.camunda.io/)
-- [**Camunda Desktop Modeler**](https://camunda.com/download/modeler/)    [(*Documentação*)](https://docs.camunda.org/manual/latest/introduction/third-party-libraries/?__hstc=252030934.4ac1f27b1db0ceeb20f17898b27cf3ba.1673104365466.1673104365466.1673104365466.1&__hssc=252030934.11.1673104365467&__hsfp=1123496843)
-- [**Camunda Platform Run**](https://camunda.com/download/)    [*(Documentação)*](https://docs.camunda.org/manual/latest/installation/full/)
+<div align="left">
 
-
+  - [**Azure Functions**](https://azure.microsoft.com/pt-br/products/functions)    [(*Documentação*)](https://azure.microsoft.com/pt-br/products/functions#content-card-list-oc803c)
+  - [**Camunda**](https://camunda.com/)    [(*Documentação*)](https://docs.camunda.io/)
+  - [**Camunda Desktop Modeler**](https://camunda.com/download/modeler/)    [(*Documentação*)](https://docs.camunda.org/manual/latest/introduction/third-party-libraries/?__hstc=252030934.4ac1f27b1db0ceeb20f17898b27cf3ba.1673104365466.1673104365466.1673104365466.1&__hssc=252030934.11.1673104365467&__hsfp=1123496843)
+  - [**Camunda Platform Run**](https://camunda.com/download/)    [*(Documentação)*](https://docs.camunda.org/manual/latest/installation/full/)
+    - Outras opções de servidores:
+      - [**Docker**](https://www.docker.com/)    [*(Documentação)*](https://docs.camunda.org/manual/latest/installation/docker/?__hstc=252030934.4ac1f27b1db0ceeb20f17898b27cf3ba.1673104365466.1673104365466.1673104365466.1&__hssc=252030934.13.1673104365467&__hsfp=1123496843)
+      - [**Tomcat**](https://tomcat.apache.org/)    [(*Documentação*)](https://docs.camunda.org/manual/latest/installation/full/tomcat/pre-packaged/?__hstc=252030934.4ac1f27b1db0ceeb20f17898b27cf3ba.1673104365466.1673104365466.1673104365466.1&__hssc=252030934.13.1673104365467&__hsfp=1123496843)
+  - [**C#**](https://dotnet.microsoft.com/en-us/learn/csharp)    [(*Documentação*)](https://learn.microsoft.com/pt-br/dotnet/csharp/?WT.mc_id=dotnet-35129-website)
+  - [**JDK 15**](https://jdk.java.net/)    [(*Documentação*)](https://www.oracle.com/java/technologies/javase/jdk15-archive-downloads.html)
+  - [**.NET**](https://dotnet.microsoft.com/pt-br/)    [(*Documentação*)](https://learn.microsoft.com/pt-br/dotnet/?WT.mc_id=dotnet-35129-website)
+</div>
 <br> 
