@@ -16,11 +16,11 @@
       <bpmn:outgoing>Flow_0zi0o7i</bpmn:outgoing>
       <bpmn:outgoing>Flow_0g0t7m8</bpmn:outgoing>
     </bpmn:exclusiveGateway>
-    <bpmn:sequenceFlow id="Flow_0zi0o7i" sourceRef="Gateway_0maqnk9" targetRef="Gateway_18esj17">
+    <bpmn:sequenceFlow id="Flow_0zi0o7i" name="Sim" sourceRef="Gateway_0maqnk9" targetRef="Gateway_18esj17">
       <bpmn:extensionElements />
       <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">${condicaoSim}</bpmn:conditionExpression>
     </bpmn:sequenceFlow>
-    <bpmn:sequenceFlow id="Flow_0g0t7m8" sourceRef="Gateway_0maqnk9" targetRef="Activity_1x4axqq">
+    <bpmn:sequenceFlow id="Flow_0g0t7m8" name="Não" sourceRef="Gateway_0maqnk9" targetRef="Activity_1x4axqq">
       <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">${!condicaoSim}</bpmn:conditionExpression>
     </bpmn:sequenceFlow>
     <bpmn:exclusiveGateway id="Gateway_0892sgj">
@@ -35,7 +35,7 @@
       <bpmn:outgoing>Flow_026tvne</bpmn:outgoing>
     </bpmn:exclusiveGateway>
     <bpmn:sequenceFlow id="Flow_026tvne" sourceRef="Gateway_18esj17" targetRef="Activity_1p02y48" />
-    <bpmn:sequenceFlow id="Flow_1dnxydp" sourceRef="Gateway_0892sgj" targetRef="Gateway_18esj17">
+    <bpmn:sequenceFlow id="Flow_1dnxydp" name="Sim" sourceRef="Gateway_0892sgj" targetRef="Gateway_18esj17">
       <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">${creditoAprovado}</bpmn:conditionExpression>
     </bpmn:sequenceFlow>
     <bpmn:exclusiveGateway id="Gateway_0co2suy">
@@ -44,7 +44,7 @@
       <bpmn:outgoing>Flow_1igkdry</bpmn:outgoing>
     </bpmn:exclusiveGateway>
     <bpmn:sequenceFlow id="Flow_1igkdry" sourceRef="Gateway_0co2suy" targetRef="Activity_0lw8mwu" />
-    <bpmn:sequenceFlow id="Flow_09pvlk8" sourceRef="Gateway_0892sgj" targetRef="Gateway_0co2suy">
+    <bpmn:sequenceFlow id="Flow_09pvlk8" name="Não" sourceRef="Gateway_0892sgj" targetRef="Gateway_0co2suy">
       <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">${!condicaoSim}</bpmn:conditionExpression>
     </bpmn:sequenceFlow>
     <bpmn:userTask id="Activity_1x4axqq" name="Tarefa de Analise Manual">
@@ -70,6 +70,9 @@
         <di:waypoint x="545" y="260" />
         <di:waypoint x="750" y="260" />
         <di:waypoint x="750" y="145" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="637" y="242" width="21" height="14" />
+        </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_1igkdry_di" bpmnElement="Flow_1igkdry">
         <di:waypoint x="775" y="120" />
@@ -78,6 +81,9 @@
       <bpmndi:BPMNEdge id="Flow_1dnxydp_di" bpmnElement="Flow_1dnxydp">
         <di:waypoint x="520" y="235" />
         <di:waypoint x="520" y="145" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="526" y="187" width="19" height="14" />
+        </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_026tvne_di" bpmnElement="Flow_026tvne">
         <di:waypoint x="545" y="120" />
@@ -90,10 +96,16 @@
       <bpmndi:BPMNEdge id="Flow_0g0t7m8_di" bpmnElement="Flow_0g0t7m8">
         <di:waypoint x="400" y="145" />
         <di:waypoint x="400" y="220" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="369" y="180" width="21" height="14" />
+        </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_0zi0o7i_di" bpmnElement="Flow_0zi0o7i">
         <di:waypoint x="425" y="120" />
         <di:waypoint x="495" y="120" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="451" y="102" width="19" height="14" />
+        </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_16dtckg_di" bpmnElement="Flow_16dtckg">
         <di:waypoint x="910" y="120" />

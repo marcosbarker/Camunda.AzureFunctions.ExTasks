@@ -6,31 +6,43 @@
 
 
 <div align="center">
-  <p>
-    <a href="">
-      <img height="50" src="https://user-images.githubusercontent.com/57602117/211108014-33fac232-1fc8-4914-b06f-c4b83452a640.png">
-    </a>     
-    <a href="">
-      <img height="50" src="https://user-images.githubusercontent.com/57602117/211107676-a7fe948f-1ebf-4fe3-b33b-51dfa77d089c.png" loading="lazy"/>
-    </a>
-    <a href="">
-      <img height="50" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_7BUSHtcFk76HbyVo2uHja9qLaowmxyzAKw&usqp=CAU" loading="lazy"/>
-    </a>
-    <a href="">
-      <img height="50" src="https://cdn.icon-icons.com/icons2/2415/PNG/512/csharp_original_logo_icon_146578.png" loading="lazy"/>
-    </a>
-    <a href="">
-      <img height="50" src="https://camunda.com/wp-content/uploads/2020/12/Camunda-workflow-engine-gradient.png" loading="lazy"/>
-    </a>
-    <a href="">
-      <img height="50" src="https://camunda.com/wp-content/uploads/2021/07/dmn.svg" loading="lazy"/>
-    </a>
-    <a href="">
-      <img height="50" src="https://camunda.com/wp-content/uploads/2020/05/cockpit.svg" loading="lazy"/> 
-    </a>  
-  </p> 
+    <p>
+      <a href="">
+        <img height="50" src="https://user-images.githubusercontent.com/57602117/211108014-33fac232-1fc8-4914-b06f-c4b83452a640.png">
+      </a>     
+      <a href="">
+        <img height="50" src="https://user-images.githubusercontent.com/57602117/211107676-a7fe948f-1ebf-4fe3-b33b-51dfa77d089c.png" loading="lazy"/>
+      </a>
+      <a href="">
+        <img height="50" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_7BUSHtcFk76HbyVo2uHja9qLaowmxyzAKw&usqp=CAU" loading="lazy"/>
+      </a>
+      <a href="">
+        <img height="50" src="https://cdn.icon-icons.com/icons2/2415/PNG/512/csharp_original_logo_icon_146578.png" loading="lazy"/>
+      </a>
+      <a href="">
+        <img height="50" src="https://camunda.com/wp-content/uploads/2020/12/Camunda-workflow-engine-gradient.png" loading="lazy"/>
+      </a>
+      <a href="">
+        <img height="50" src="https://camunda.com/wp-content/uploads/2021/07/dmn.svg" loading="lazy"/>
+      </a>
+      <a href="">
+        <img height="50" src="https://camunda.com/wp-content/uploads/2020/05/cockpit.svg" loading="lazy"/> 
+      </a>  
+    </p> 
+  </div>
+  <br>
+  <br>
+<p>
+
+  ## 📄 BPMN base do projeto
+  <a href="">
+    <img height="200" align="center" src="https://user-images.githubusercontent.com/57602117/211158974-bfe68085-f0ea-426d-b8c0-28a54402f7e3.png">
+  </a> 
+</p>    
 
 
+<br>
+<br>
 
   ## <img height="45px" align="center" src="https://github.com/OsZeressemos/zeroCommerce/blob/main/public/assets/readme/stockrocketgif.gif">    Tecnologias Utilizadas
 
