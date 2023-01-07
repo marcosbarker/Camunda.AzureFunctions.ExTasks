@@ -5,42 +5,41 @@
 (Azrure Functions, Servicebus, C#)</h1>
 <a name="back-to-top">
 <div align="center">
-    <p>
-      <a href="">
-        <img height="50" src="https://user-images.githubusercontent.com/57602117/211108014-33fac232-1fc8-4914-b06f-c4b83452a640.png">
-      </a>     
-      <a href="">
-        <img height="50" src="https://user-images.githubusercontent.com/57602117/211107676-a7fe948f-1ebf-4fe3-b33b-51dfa77d089c.png" loading="lazy"/>
-      </a>
-      <a href="">
-        <img height="50" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_7BUSHtcFk76HbyVo2uHja9qLaowmxyzAKw&usqp=CAU" loading="lazy"/>
-      </a>
-      <a href="">
-        <img height="50" src="https://cdn.icon-icons.com/icons2/2415/PNG/512/csharp_original_logo_icon_146578.png" loading="lazy"/>
-      </a>
-      <a href="">
-        <img height="50" src="https://camunda.com/wp-content/uploads/2020/12/Camunda-workflow-engine-gradient.png" loading="lazy"/>
-      </a>
-      <a href="">
-        <img height="50" src="https://camunda.com/wp-content/uploads/2021/07/dmn.svg" loading="lazy"/>
-      </a>
-      <a href="">
-        <img height="50" src="https://camunda.com/wp-content/uploads/2020/05/cockpit.svg" loading="lazy"/> 
-      </a>  
-    </p> 
-  </div>
-  <br>
-  <br>
-  <br>
+  <p>
+    <a href="">
+      <img height="50" src="https://user-images.githubusercontent.com/57602117/211108014-33fac232-1fc8-4914-b06f-c4b83452a640.png">
+    </a>     
+    <a href="">
+      <img height="50" src="https://user-images.githubusercontent.com/57602117/211107676-a7fe948f-1ebf-4fe3-b33b-51dfa77d089c.png" loading="lazy"/>
+    </a>
+    <a href="">
+      <img height="50" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_7BUSHtcFk76HbyVo2uHja9qLaowmxyzAKw&usqp=CAU" loading="lazy"/>
+    </a>
+    <a href="">
+      <img height="50" src="https://cdn.icon-icons.com/icons2/2415/PNG/512/csharp_original_logo_icon_146578.png" loading="lazy"/>
+    </a>
+    <a href="">
+      <img height="50" src="https://camunda.com/wp-content/uploads/2020/12/Camunda-workflow-engine-gradient.png" loading="lazy"/>
+    </a>
+    <a href="">
+      <img height="50" src="https://camunda.com/wp-content/uploads/2021/07/dmn.svg" loading="lazy"/>
+    </a>
+    <a href="">
+      <img height="50" src="https://camunda.com/wp-content/uploads/2020/05/cockpit.svg" loading="lazy"/> 
+    </a>  
+  </p> 
+</div>
+<br>
 <p>
 
-  ## Índice
+  ## 🔎 Índice
   - [BPMN Base](#bpmn-base)
   - [Estrutura do Projeto](#estrutura-projeto)
   - [Collection](#collection)
   - [Filas e Comunicação com Servicebus](#filas-servicebus)
   - [Tecnologias Utilizadas](#tec-utilizadas)
-  </p>
+  - [Como Rodar o Projeto](#rodar-projeto)
+</p>
 <br>
 <p>
 <a name="bpmn-base">
@@ -51,6 +50,7 @@
   </a> 
 </p>
 <br>
+<p>
 <a name="estrutura-projeto">
 
   ## 👨‍💻 Estrutura do Projeto
@@ -60,6 +60,7 @@
 </a> 
 </p>
 <br>
+<p>
 <a name="collection">
 
   ## 📚 Collection
@@ -68,6 +69,7 @@
   </a> 
 </p>  
 <br>
+<p>
 <a name="filas-servicebus">
 
   ## 🚌 Filas e Comunicação com Servicebus 
@@ -75,6 +77,22 @@
     <img height="360" align="center" src="https://user-images.githubusercontent.com/57602117/211159969-80c20cc3-fa9d-472a-bfca-1cc8141c1316.png">
   </a> 
 </p>  
+<br>
+<p>
+<a name="rodar-projeto">
+
+  ## ⚙️ Como Rodar o Projeto
+
+- Clonar o repositório
+- Criar Servicebus com as seguintes filas: condicaoum, condicaodois e condicaotres
+- Iniciar o projeto
+- Importar Collection no Postman
+- Abrir arquivo BPMN no Camunda: genenericMain.bpmn
+- Iniciar servidor escolhido: Tomcat, Docker(image) ou Camunda Run
+- Implantar Camunda
+
+
+</p>
 <br>
 <br>
 <a name="tec-utilizadas">
@@ -92,6 +110,7 @@
   - [**C#**](https://dotnet.microsoft.com/en-us/learn/csharp)    [(*Documentação*)](https://learn.microsoft.com/pt-br/dotnet/csharp/?WT.mc_id=dotnet-35129-website)
   - [**JDK 15**](https://jdk.java.net/)    [(*Documentação*)](https://www.oracle.com/java/technologies/javase/jdk15-archive-downloads.html)
   - [**.NET**](https://dotnet.microsoft.com/pt-br/)    [(*Documentação*)](https://learn.microsoft.com/pt-br/dotnet/?WT.mc_id=dotnet-35129-website)
+  - [**Postman**](https://www.postman.com/)    [(*Documentação*)](https://learning.postman.com/docs/getting-started/introduction/)
   - [**Servicebus**](https://azure.microsoft.com/pt-br/products/service-bus)    [(*Documentação*)](https://learn.microsoft.com/pt-BR/azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues?tabs=passwordless)
 </div>
 <br> 
