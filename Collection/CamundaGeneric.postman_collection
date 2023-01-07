@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "784b7e9e-e5b1-4fd5-8275-bdf0b046027c",
-		"name": "Camunda",
+		"_postman_id": "1b4fd4a7-d155-4821-8a52-af83244f2f2f",
+		"name": "Camunda (generic)",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "18030467"
 	},
@@ -37,12 +37,23 @@
 		},
 		{
 			"name": "StartProcess",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"console.log(pm.environment.set(\"randombusinessKey\", pm.variables.replaceIn('{{$randomHexColor}}')));"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"variables\": {\r\n        \"aVariable\": {\r\n            \"value\": \"aStringValue\",\r\n            \"type\": \"String\"\r\n        },\r\n        \"anotherVariable\": {\r\n            \"value\": true,\r\n            \"type\": \"Boolean\"\r\n        }\r\n    },\r\n    \"businessKey\": \"myBusinessKey\"\r\n}",
+					"raw": "{\r\n    \"variables\": {\r\n        \"aVariable\": {\r\n            \"value\": \"aStringValue\",\r\n            \"type\": \"String\"\r\n        },\r\n        \"anotherVariable\": {\r\n            \"value\": true,\r\n            \"type\": \"Boolean\"\r\n        }\r\n    },\r\n    \"businessKey\": \"{{randombusinessKey}}\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -66,7 +77,7 @@
 					"variable": [
 						{
 							"key": "key",
-							"value": "AnaliseCredito"
+							"value": "GenericMainId"
 						}
 					]
 				}
@@ -118,13 +129,13 @@
 			"response": []
 		},
 		{
-			"name": "fetchAndLock (analiseCredito)",
+			"name": "fetchAndLock (condicaoUM)",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"workerId\": \"aWorkerId\",\r\n    \"maxTasks\": 10,\r\n    \"userPriority\": true,\r\n    \"topics\":\r\n    [\r\n        {\r\n            \"topicName\": \"analiseCredito\",\r\n            \"lockDuration\": 10000\r\n        }\r\n    ]\r\n}",
+					"raw": "{\r\n    \"workerId\": \"aWorkerId\",\r\n    \"maxTasks\": 10,\r\n    \"userPriority\": true,\r\n    \"topics\":\r\n    [\r\n        {\r\n            \"topicName\": \"condicaoUM\",\r\n            \"lockDuration\": 10000\r\n        }\r\n    ]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -148,13 +159,13 @@
 			"response": []
 		},
 		{
-			"name": "fetchAndLock (liberaCredito)",
+			"name": "fetchAndLock (condicaoDOIS)",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"workerId\": \"aWorkerId\",\r\n    \"maxTasks\": 10,\r\n    \"userPriority\": true,\r\n    \"topics\":\r\n    [\r\n        {\r\n            \"topicName\": \"liberaCredito\",\r\n            \"lockDuration\": 50\r\n        }\r\n    ]\r\n}",
+					"raw": "{\r\n    \"workerId\": \"aWorkerId\",\r\n    \"maxTasks\": 10,\r\n    \"userPriority\": true,\r\n    \"topics\":\r\n    [\r\n        {\r\n            \"topicName\": \"condicaoDOIS\",\r\n            \"lockDuration\": 50\r\n        }\r\n    ]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -178,13 +189,13 @@
 			"response": []
 		},
 		{
-			"name": "fetchAndLock (notificaCliente)",
+			"name": "fetchAndLock (condicaoTRES)",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"workerId\": \"aWorkerId\",\r\n    \"maxTasks\": 10,\r\n    \"userPriority\": true,\r\n    \"topics\":\r\n    [\r\n        {\r\n            \"topicName\": \"notificaCliente\",\r\n            \"lockDuration\": 50\r\n        }\r\n    ]\r\n}",
+					"raw": "{\r\n    \"workerId\": \"aWorkerId\",\r\n    \"maxTasks\": 10,\r\n    \"userPriority\": true,\r\n    \"topics\":\r\n    [\r\n        {\r\n            \"topicName\": \"condicaoTRES\",\r\n            \"lockDuration\": 50\r\n        }\r\n    ]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -214,7 +225,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"workerId\": \"aWorkerId\",\r\n    \"maxTasks\": 10,\r\n    \"userPriority\": true,\r\n    \"topics\":\r\n    [\r\n        {\r\n            \"topicName\": \"analiseCredito\",\r\n            \"lockDuration\": 1000\r\n        },\r\n        {\r\n            \"topicName\": \"notificaCliente\",\r\n            \"lockDuration\": 1000\r\n        },\r\n        {\r\n            \"topicName\": \"liberaCredito\",\r\n            \"lockDuration\": 1000\r\n        }\r\n    ]\r\n}",
+					"raw": "{\r\n    \"workerId\": \"aWorkerId\",\r\n    \"maxTasks\": 10,\r\n    \"userPriority\": true,\r\n    \"topics\":\r\n    [\r\n        {\r\n            \"topicName\": \"condicaoUM\",\r\n            \"lockDuration\": 1000\r\n        },\r\n        {\r\n            \"topicName\": \"condicaoDOIS\",\r\n            \"lockDuration\": 1000\r\n        },\r\n        {\r\n            \"topicName\": \"condicaoTRES\",\r\n            \"lockDuration\": 1000\r\n        }\r\n    ]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
