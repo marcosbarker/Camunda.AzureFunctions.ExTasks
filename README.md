@@ -36,7 +36,7 @@
 
 <div align="left">
 
-  - [**Azure Functions**](https://azure.microsoft.com/pt-br/products/functions)    [(*Documentação*)](https://azure.microsoft.com/pt-br/products/functions#content-card-list-oc803c)
+  - [**Azure Functions**](https://azure.microsoft.com/pt-br/products/functions)    [(*Documentação*)](https://learn.microsoft.com/pt-BR/azure/azure-functions/)
   - [**Camunda**](https://camunda.com/)    [(*Documentação*)](https://docs.camunda.io/)
   - [**Camunda Desktop Modeler**](https://camunda.com/download/modeler/)    [(*Documentação*)](https://docs.camunda.org/manual/latest/introduction/third-party-libraries/?__hstc=252030934.4ac1f27b1db0ceeb20f17898b27cf3ba.1673104365466.1673104365466.1673104365466.1&__hssc=252030934.11.1673104365467&__hsfp=1123496843)
   - [**Camunda Platform Run**](https://camunda.com/download/)    [*(Documentação)*](https://docs.camunda.org/manual/latest/installation/full/)
@@ -46,5 +46,6 @@
   - [**C#**](https://dotnet.microsoft.com/en-us/learn/csharp)    [(*Documentação*)](https://learn.microsoft.com/pt-br/dotnet/csharp/?WT.mc_id=dotnet-35129-website)
   - [**JDK 15**](https://jdk.java.net/)    [(*Documentação*)](https://www.oracle.com/java/technologies/javase/jdk15-archive-downloads.html)
   - [**.NET**](https://dotnet.microsoft.com/pt-br/)    [(*Documentação*)](https://learn.microsoft.com/pt-br/dotnet/?WT.mc_id=dotnet-35129-website)
+  - [**Servicebus**](https://azure.microsoft.com/pt-br/products/service-bus)    [(*Documentação*)](https://learn.microsoft.com/pt-BR/azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues?tabs=passwordless)
 </div>
 <br> 
