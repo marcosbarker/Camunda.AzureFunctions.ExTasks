@@ -1,0 +1,241 @@
+{
+	"info": {
+		"_postman_id": "784b7e9e-e5b1-4fd5-8275-bdf0b046027c",
+		"name": "Camunda",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18030467"
+	},
+	"item": [
+		{
+			"name": "StartForm",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/engine-rest/process-definition/key/:key/form-variables",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"engine-rest",
+						"process-definition",
+						"key",
+						":key",
+						"form-variables"
+					],
+					"variable": [
+						{
+							"key": "key",
+							"value": "AnaliseCredito"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "StartProcess",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"variables\": {\r\n        \"aVariable\": {\r\n            \"value\": \"aStringValue\",\r\n            \"type\": \"String\"\r\n        },\r\n        \"anotherVariable\": {\r\n            \"value\": true,\r\n            \"type\": \"Boolean\"\r\n        }\r\n    },\r\n    \"businessKey\": \"myBusinessKey\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/engine-rest/process-definition/key/:key/start",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"engine-rest",
+						"process-definition",
+						"key",
+						":key",
+						"start"
+					],
+					"variable": [
+						{
+							"key": "key",
+							"value": "AnaliseCredito"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CompleteTask (creditoAprovado)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "url",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"workerId\": \"aWorkerId\",\r\n    \"variables\":\r\n    { \r\n        \"creditoAprovado\": \r\n        {\r\n            \"value\": \"true\",\r\n            \"type\": \"boolean\"\r\n        },\r\n        \"aVariable\": {\"value\": \"aStringValue\"},\r\n        \"anotherVariable\": {\"value\": 42},\r\n        \"aThirdVariable\": {\"value\": true}\r\n    },\r\n    \"localVariables\":\r\n    {\r\n        \"aLocalVariable\": {\"value\": \"aStringValue\"}\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/engine-rest/external-task/:id/complete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"engine-rest",
+						"external-task",
+						":id",
+						"complete"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1e1d3ea5-8c87-11ed-a40c-366f242924af"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetchAndLock (analiseCredito)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"workerId\": \"aWorkerId\",\r\n    \"maxTasks\": 10,\r\n    \"userPriority\": true,\r\n    \"topics\":\r\n    [\r\n        {\r\n            \"topicName\": \"analiseCredito\",\r\n            \"lockDuration\": 10000\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/engine-rest/external-task/fetchAndLock",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"engine-rest",
+						"external-task",
+						"fetchAndLock"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetchAndLock (liberaCredito)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"workerId\": \"aWorkerId\",\r\n    \"maxTasks\": 10,\r\n    \"userPriority\": true,\r\n    \"topics\":\r\n    [\r\n        {\r\n            \"topicName\": \"liberaCredito\",\r\n            \"lockDuration\": 50\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/engine-rest/external-task/fetchAndLock",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"engine-rest",
+						"external-task",
+						"fetchAndLock"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetchAndLock (notificaCliente)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"workerId\": \"aWorkerId\",\r\n    \"maxTasks\": 10,\r\n    \"userPriority\": true,\r\n    \"topics\":\r\n    [\r\n        {\r\n            \"topicName\": \"notificaCliente\",\r\n            \"lockDuration\": 50\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/engine-rest/external-task/fetchAndLock",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"engine-rest",
+						"external-task",
+						"fetchAndLock"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetchAndLock (FULL)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"workerId\": \"aWorkerId\",\r\n    \"maxTasks\": 10,\r\n    \"userPriority\": true,\r\n    \"topics\":\r\n    [\r\n        {\r\n            \"topicName\": \"analiseCredito\",\r\n            \"lockDuration\": 1000\r\n        },\r\n        {\r\n            \"topicName\": \"notificaCliente\",\r\n            \"lockDuration\": 1000\r\n        },\r\n        {\r\n            \"topicName\": \"liberaCredito\",\r\n            \"lockDuration\": 1000\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/engine-rest/external-task/fetchAndLock",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"engine-rest",
+						"external-task",
+						"fetchAndLock"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
