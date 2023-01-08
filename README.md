@@ -2,7 +2,7 @@
 <img height="200px" src="https://camunda.com/wp-content/uploads/2020/07/camunda-logo-social-update.jpg" alt="logoC#" />
 </div>
 <h1 align="center">External Tasks<br>
-(Azrure Functions, Servicebus, C#)</h1>
+(Azrure Functions, Servicebus, .NET, C#)</h1>
 <a name="back-to-top">
 <div align="center">
   <p>
@@ -38,6 +38,7 @@
   - [Collection](#collection)
   - [Filas e Comunicação com Servicebus](#filas-servicebus)
   - [Tecnologias Utilizadas](#tec-utilizadas)
+  - [Console execução Functions](#exec-function)
   - [Como Rodar o Projeto](#rodar-projeto)
 </p>
 <br>
@@ -54,7 +55,7 @@
 <a name="estrutura-projeto">
 
   ## 👨‍💻 Estrutura do Projeto
-  #### _Worker(ouvinte) + quatro Functions genéricas referentes a estrutura da BPMN_
+  #### _(Worker(ouvinte) + quatro Functions genéricas referentes a estrutura da BPMN)_
 <a href="">
   <img height="340" align="center" src="https://user-images.githubusercontent.com/57602117/211159561-f7130c5f-475a-4abe-95d7-3b6a8d6e22e5.png">
 </a> 
@@ -70,6 +71,18 @@
 </p>  
 <br>
 <p>
+<a name="exec-function">
+
+  ## ⚡ Console execução Functions
+  #### _(Filas e Worker, todas as etapas possuem log precedido por "@@")_ 
+  <a href="">
+    <img height="360" align="center" src="https://user-images.githubusercontent.com/57602117/211163207-69ebc30e-3a2b-4412-b7d6-55bb4dfe5ec5.png">
+  </a> 
+</p>  
+<br>
+<p>
+<br>
+<p>
 <a name="filas-servicebus">
 
   ## 🚌 Filas e Comunicação com Servicebus 
@@ -82,16 +95,16 @@
 <a name="rodar-projeto">
 
   ## ⚙️ Como Rodar o Projeto
+  #### *(Tópico genérico para ser usado como tasklist)*  
 
-- Clonar o repositório
+- Clonar repositório
 - Criar Servicebus com as seguintes filas: condicaoum, condicaodois e condicaotres
 - Iniciar o projeto
 - Importar Collection no Postman
 - Abrir arquivo BPMN no Camunda: genenericMain.bpmn
 - Iniciar servidor escolhido: Tomcat, Docker(image) ou Camunda Run
 - Implantar Camunda
-
-
+- Iniciar um processo atraves da rota POST|StartProcess
 </p>
 <br>
 <br>

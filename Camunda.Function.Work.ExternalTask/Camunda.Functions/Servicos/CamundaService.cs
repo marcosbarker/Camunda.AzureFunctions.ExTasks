@@ -28,7 +28,7 @@ namespace Camunda.Functions.Servicos
         {
             var request = new
             {
-                workerId = "ProcessoCredito",
+                workerId = "ProcessoExternalTask",
                 maxTasks = 10,
                 topics = new[]
                    {

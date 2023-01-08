@@ -36,7 +36,7 @@
     </bpmn:exclusiveGateway>
     <bpmn:sequenceFlow id="Flow_026tvne" sourceRef="Gateway_18esj17" targetRef="Activity_1p02y48" />
     <bpmn:sequenceFlow id="Flow_1dnxydp" name="Sim" sourceRef="Gateway_0892sgj" targetRef="Gateway_18esj17">
-      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">${creditoAprovado}</bpmn:conditionExpression>
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">${condicaoSim}</bpmn:conditionExpression>
     </bpmn:sequenceFlow>
     <bpmn:exclusiveGateway id="Gateway_0co2suy">
       <bpmn:incoming>Flow_0f8n5hg</bpmn:incoming>

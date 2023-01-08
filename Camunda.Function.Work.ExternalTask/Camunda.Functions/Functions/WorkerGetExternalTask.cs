@@ -30,7 +30,7 @@ namespace Camunda.Functions.Functions
                 await _sbService.SendMessage(task.TopicName, JsonConvert.SerializeObject(task));
             }
 
-            log.LogInformation($"@@Processando: {response.Count} recebidas do Camunda (tarefas externas).");
+            log.LogInformation($"@@Processando: {response.Count} terefas recebidas do Camunda.");
         }
     }
 }

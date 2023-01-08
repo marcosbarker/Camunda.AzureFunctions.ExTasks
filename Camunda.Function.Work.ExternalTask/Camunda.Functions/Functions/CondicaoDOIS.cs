@@ -28,7 +28,7 @@ namespace Camunda.Functions.Functions
                 //{ "condicaoSim", new Variables{ Type = "boolean", Value = true }}
             };
 
-            await _camundaService.CompleteExternalTask(task.Id.ToString(), new CompleteExternalTaskRequest { WorkerId = "ProcessoCredito", Variables = variables });
+            await _camundaService.CompleteExternalTask(task.Id.ToString(), new CompleteExternalTaskRequest { WorkerId = "ProcessoExternalTask", Variables = variables });
 
             log.LogInformation($"@@ BusinessKey: {task.BusinessKey} condicao DOIS realizada");
         }
