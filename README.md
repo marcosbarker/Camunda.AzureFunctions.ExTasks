@@ -6,25 +6,25 @@
 <a name="back-to-top">
 <div align="center">
   <p>
-    <a href="">
+    <a href="https://azure.microsoft.com/pt-br/products/functions">
       <img height="50" src="https://user-images.githubusercontent.com/57602117/211108014-33fac232-1fc8-4914-b06f-c4b83452a640.png">
     </a>     
-    <a href="">
+    <a href="https://azure.microsoft.com/pt-br/products/service-bus">
       <img height="50" src="https://user-images.githubusercontent.com/57602117/211107676-a7fe948f-1ebf-4fe3-b33b-51dfa77d089c.png" loading="lazy"/>
     </a>
-    <a href="">
+    <a href="https://dotnet.microsoft.com/pt-br/">
       <img height="50" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_7BUSHtcFk76HbyVo2uHja9qLaowmxyzAKw&usqp=CAU" loading="lazy"/>
     </a>
-    <a href="">
+    <a href="https://dotnet.microsoft.com/en-us/learn/csharp">
       <img height="50" src="https://cdn.icon-icons.com/icons2/2415/PNG/512/csharp_original_logo_icon_146578.png" loading="lazy"/>
     </a>
-    <a href="">
+    <a href="https://camunda.com/">
       <img height="50" src="https://camunda.com/wp-content/uploads/2020/12/Camunda-workflow-engine-gradient.png" loading="lazy"/>
     </a>
-    <a href="">
+    <a href="https://camunda.com/">
       <img height="50" src="https://camunda.com/wp-content/uploads/2021/07/dmn.svg" loading="lazy"/>
     </a>
-    <a href="">
+    <a href="https://camunda.com/">
       <img height="50" src="https://camunda.com/wp-content/uploads/2020/05/cockpit.svg" loading="lazy"/> 
     </a>  
   </p> 
@@ -95,10 +95,17 @@
 <a name="rodar-projeto">
 
   ## ⚙️ Como Rodar o Projeto
-  #### *(Tópico genérico para ser usado como tasklist)*  
+  #### *(Tópico genérico para ser usado como tasklist)*
+  #### *(Pré requisitos: SDK .NET e JDK 15)*  
 
 - Clonar repositório
-- Criar Servicebus com as seguintes filas: condicaoum, condicaodois e condicaotres
+- incluir as seguintes propriedades no local.settings.json com os seus respectivos dados:
+  - CamundaUrl
+  - ServiceBusConnectionString
+- Criar Servicebus com as seguintes filas: 
+  - condicaoum
+  - condicaodois
+  - condicaotres
 - Iniciar o projeto
 - Importar Collection no Postman
 - Abrir arquivo BPMN no Camunda: genenericMain.bpmn
