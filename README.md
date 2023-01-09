@@ -39,6 +39,7 @@
   - [Filas e Comunicação com Servicebus](#filas-servicebus)
   - [Tecnologias Utilizadas](#tec-utilizadas)
   - [Console execução Functions](#exec-function)
+  - [Visualização Funcionamento do Processo (log)](#exec-function-log)
   - [Como Rodar o Projeto](#rodar-projeto)
 </p>
 <br>
@@ -81,6 +82,15 @@
 </p>  
 <br>
 <p>
+<a name="exec-function-log">
+
+  ## ⚡ Visualização Funcionamento do Processo (log)  
+  <a href="">
+    <img height="545" align="center" src="https://user-images.githubusercontent.com/57602117/211386447-44033091-bcae-45ee-8369-f983c211d823.png">
+  </a> 
+</p>  
+<br>
+<p>
 <a name="filas-servicebus">
 
   ## 🚌 Filas e Comunicação com Servicebus 
@@ -93,8 +103,8 @@
 <a name="rodar-projeto">
 
   ## ⚙️ Como Rodar o Projeto
-  #### *(Tópico genérico para ser usado como tasklist)*
-  #### *(Pré requisitos: SDK .NET e JDK 15)*  
+  <h4><i>(Tópico genérico para ser usado como tasklist)</i></h4>
+  <h4><i>(Pré requisitos: SDK .NET e JDK 15)</i></h4>
 
 - Clonar repositório
 - incluir as seguintes propriedades no local.settings.json com os seus respectivos dados:

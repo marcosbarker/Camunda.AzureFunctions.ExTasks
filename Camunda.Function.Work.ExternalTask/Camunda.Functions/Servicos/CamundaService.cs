@@ -34,15 +34,15 @@ namespace Camunda.Functions.Servicos
                    {
                         new {
                             topicName = "condicaoUM",
-                            lockDuration = 1000
+                            lockDuration = 3000
                         },
                         new {
                             topicName = "condicaoTRES",
-                            lockDuration = 1000
+                            lockDuration = 3000
                         },
                          new {
                             topicName = "condicaoDOIS",
-                            lockDuration = 1000
+                            lockDuration = 3000
                         },
                     }
             };
