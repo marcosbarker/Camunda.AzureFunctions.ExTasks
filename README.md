@@ -81,8 +81,6 @@
 </p>  
 <br>
 <p>
-<br>
-<p>
 <a name="filas-servicebus">
 
   ## 🚌 Filas e Comunicação com Servicebus 
