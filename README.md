@@ -102,7 +102,7 @@
 - incluir as seguintes propriedades no local.settings.json com os seus respectivos dados:
   - CamundaUrl
   - ServiceBusConnectionString
-- Criar Servicebus com as seguintes filas: 
+- Criar Servicebus com as seguintes filas (Nomes genéricos utilizados no projeto): 
   - condicaoum
   - condicaodois
   - condicaotres
