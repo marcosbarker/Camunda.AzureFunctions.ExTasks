@@ -47,7 +47,7 @@
 
   ## 📄 BPMN Base 
 <a href="">
-    <img height="200" align="center" src="https://user-images.githubusercontent.com/57602117/211158974-bfe68085-f0ea-426d-b8c0-28a54402f7e3.png">
+    <img height="340" align="center" src="https://user-images.githubusercontent.com/57602117/211158974-bfe68085-f0ea-426d-b8c0-28a54402f7e3.png">
   </a> 
 </p>
 <br>
@@ -57,7 +57,7 @@
   ## 👨‍💻 Estrutura do Projeto
   #### _(Worker(ouvinte) + quatro Functions genéricas referentes a estrutura da BPMN)_
 <a href="">
-  <img height="340" align="center" src="https://user-images.githubusercontent.com/57602117/211159561-f7130c5f-475a-4abe-95d7-3b6a8d6e22e5.png">
+  <img height="580" align="center" src="https://user-images.githubusercontent.com/57602117/211159561-f7130c5f-475a-4abe-95d7-3b6a8d6e22e5.png">
 </a> 
 </p>
 <br>
@@ -66,7 +66,7 @@
 
   ## 📚 Collection
   <a href="">
-    <img height="218" align="center" src="https://user-images.githubusercontent.com/57602117/211160152-222d88b1-1dc3-4b7f-b01f-a8411a3a2844.png">
+    <img height="" align="center" src="https://user-images.githubusercontent.com/57602117/211160152-222d88b1-1dc3-4b7f-b01f-a8411a3a2844.png">
   </a> 
 </p>  
 <br>
@@ -76,7 +76,7 @@
   ## ⚡ Console execução Functions
   #### _(Filas e Worker, todas as etapas possuem log precedido por "@@")_ 
   <a href="">
-    <img height="360" align="center" src="https://user-images.githubusercontent.com/57602117/211163207-69ebc30e-3a2b-4412-b7d6-55bb4dfe5ec5.png">
+    <img height="300" align="center" src="https://user-images.githubusercontent.com/57602117/211163207-69ebc30e-3a2b-4412-b7d6-55bb4dfe5ec5.png">
   </a> 
 </p>  
 <br>
@@ -87,7 +87,7 @@
 
   ## 🚌 Filas e Comunicação com Servicebus 
   <a href="">
-    <img height="360" align="center" src="https://user-images.githubusercontent.com/57602117/211159969-80c20cc3-fa9d-472a-bfca-1cc8141c1316.png">
+    <img height="" align="center" src="https://user-images.githubusercontent.com/57602117/211159969-80c20cc3-fa9d-472a-bfca-1cc8141c1316.png">
   </a> 
 </p>  
 <br>
