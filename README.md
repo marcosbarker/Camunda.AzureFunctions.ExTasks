@@ -74,7 +74,7 @@
 <a name="exec-function">
 
   ## ⚡ Console execução Functions
-  #### _(Filas e Worker, todas as etapas possuem log precedido por "@@")_ 
+  #### _(Filas e Worker, todas as etapas possuem log. São precedidos por "@@")_ 
   <a href="">
     <img height="300" align="center" src="https://user-images.githubusercontent.com/57602117/211163207-69ebc30e-3a2b-4412-b7d6-55bb4dfe5ec5.png">
   </a> 
